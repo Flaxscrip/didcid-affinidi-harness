@@ -1,0 +1,20 @@
+[package]
+name = "didcid-affinidi-harness"
+version = "0.1.0"
+edition = "2024"
+
+# Interop test: Affinidi's maintained DIDComm engine + resolver SDK, with a did:cid
+# resolver registered through the SDK's public plug-in point, packs authcrypt to an
+# Archon did:cid recipient and POSTs it to the published DIDCommMessaging uri.
+
+[dependencies]
+affinidi-messaging-didcomm = "0.15"
+affinidi-did-resolver-cache-sdk = "0.8"
+affinidi-did-common = "0.4"
+affinidi-crypto = { version = "0.2", features = ["jose"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde_json = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+bs58 = "0.5"
+base64 = "0.22"
+anyhow = "1"
