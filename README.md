@@ -18,3 +18,7 @@ Build needs rustc >= 1.95 (`rustup toolchain install stable`, then
 Notes for a real driver: Affinidi's `Document` types `verificationMethod[].id` as `url::Url`, so
 relative ids ("#key-1", which DID Core allows and Archon uses for the control key) must be made
 absolute by the resolver; the SDK also normalises service `type` to an array.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

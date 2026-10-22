@@ -2,6 +2,7 @@
 name = "didcid-affinidi-harness"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
 
 # Interop test: Affinidi's maintained DIDComm engine + resolver SDK, with a did:cid
 # resolver registered through the SDK's public plug-in point, packs authcrypt to an
